@@ -6,7 +6,7 @@ const Projects = () => {
     // icons: Server, Database, Smartphone, Globe
     {
       title: 'Wedding Invitation',
-      description: 'Traditional Rock Paper Scissors Game which also keeps track of Wins, Loses and Ties.',
+      description: 'It was a wedding invite project I made as a freelancer. This client wanted some unique invitation ASAP. So This was the result.',
       tech: ['HTML', 'CSS', 'JavaScript', 'TypeScript', ],
       icon: <Globe className="w-6 h-6" />,
       github: '',
