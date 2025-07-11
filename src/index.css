@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #030712;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #06b6d4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0891b2;
+}
+
+/* Glassmorphism effect */
+.glass-card {
+  background: rgba(31, 41, 55, 0.3);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDelay {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDelay2 {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDelay3 {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fadeInDelay 0.8s ease-out 0.3s both;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeInDelay2 0.8s ease-out 0.6s both;
+}
+
+.animate-fade-in-delay-3 {
+  animation: fadeInDelay3 0.8s ease-out 0.9s both;
+}
+
+/* Smooth scroll offset for fixed header */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Button hover effects */
+.btn-primary {
+  @apply px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 border-2 border-cyan-400 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-105;
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .text-7xl {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+  
+  .text-5xl {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  .text-4xl {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  
+  .text-3xl {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  
+  /* Mobile spacing adjustments */
+  .py-20 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .mb-16 {
+    margin-bottom: 2rem;
+  }
+  
+  .mb-12 {
+    margin-bottom: 2rem;
+  }
+  
+  /* Mobile grid adjustments */
+  .grid {
+    gap: 1rem;
+  }
+  
+  .glass-card {
+    padding: 1rem;
+  }
+}
+
+/* Loading animation for skill bars */
+.skill-bar {
+  transition: width 2s ease-in-out;
+}
+
+/* Glow effects */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+.glow-green {
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(45deg, #06b6d4, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom focus styles */
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+}
+
+/* Animated background elements */
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
