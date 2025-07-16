@@ -121,7 +121,7 @@ const Skills = () => {
                     onClick={() => window.open('/certificates/ai-nxtwave', '_blank')}
                     className="hover:text-cyan-400 transition-colors duration-200 cursor-pointer"
                   >
-                    AI for students: Build your own Generative AI model workshop
+                    AI for students
                   </button>
                 </div>
 
@@ -211,7 +211,7 @@ const Skills = () => {
                     onClick={() => window.open('/certificates/consultathon', '_blank')}
                     className="hover:text-cyan-400 transition-colors duration-200 cursor-pointer"
                   >
-                    Certificate of Participation in Consultathon 4.0
+                    Consultathon 4.0
                   </button>
                 </div>
 
