@@ -26,7 +26,7 @@ const CertificateViewer = () => {
       credentialUrl: 'https://credsverse.com/credentials/c465fe1f-a6ac-4883-9b86-d4985d67d473'
     },
     'web-design': {
-      title: 'Learn Web Design, Python and MySQL: Bootcamp',
+      title: 'Web Design, Python & MySQL: Bootcamp',
       issuer: 'Udemy',
       date: 'March 2025',
       // description: 'Complete Android development course covering UI design, data storage, and app deployment.',

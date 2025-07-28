@@ -5,13 +5,24 @@ const Projects = () => {
   const projects = [
     // icons: Server, Database, Smartphone, Globe
     {
+      title: 'Online Election Voting System',
+      description: 'It is my Final Year Project. A secure online voting system that allows users to register, vote, and view results in real-time.',
+      tech: ['HTML', 'CSS', 'JavaScript', 'TypeScript', ],
+      icon: <Globe className="w-6 h-6" />,
+      github: '',
+      demo: 'https://bhushan-weds-vaishnavi.netlify.app/',
+      color: 'from-blue-500 to-purple-500',
+      status: 'In Progress'
+    },
+    {
       title: 'Wedding Invitation',
       description: 'It was a wedding invite project I made as a freelancer. This client wanted some unique invitation ASAP. So This was the result.',
       tech: ['HTML', 'CSS', 'JavaScript', 'TypeScript', ],
       icon: <Globe className="w-6 h-6" />,
       github: '',
       demo: 'https://bhushan-weds-vaishnavi.netlify.app/',
-      color: 'from-blue-500 to-purple-500'
+      color: 'from-blue-500 to-purple-500',
+      status: 'Completed'
     },
     {
       title: 'Rock Paper Scissors Game',
@@ -20,7 +31,8 @@ const Projects = () => {
       icon: <Globe className="w-6 h-6" />,
       github: 'https://github.com/aaditya-712/Rock-Paper-Scissors',
       demo: 'https://aaditya-712.github.io/Rock-Paper-Scissors/',
-      color: 'from-blue-500 to-purple-500'
+      color: 'from-blue-500 to-purple-500',
+      status: 'Completed'
     },
     {
       title: 'To Do List',
@@ -29,7 +41,8 @@ const Projects = () => {
       icon: <Globe className="w-6 h-6" />,
       github: 'https://github.com/aaditya-712/To-do-List',
       demo: 'https://aaditya-712.github.io/To-do-List/',
-      color: 'from-blue-500 to-purple-500'
+      color: 'from-blue-500 to-purple-500',
+      status: 'Completed'
     },
     {
       title: 'Dice Game',
@@ -38,7 +51,8 @@ const Projects = () => {
       icon: <Globe className="w-6 h-6" />,
       github: 'https://github.com/aaditya-712/Dice-Game',
       demo: 'https://aaditya-712.github.io/Dice-Game/Dice_Game/',
-      color: 'from-blue-500 to-purple-500'
+      color: 'from-blue-500 to-purple-500',
+      status: 'Completed'
     },
     {
       title: 'Drum Kit',
@@ -47,7 +61,8 @@ const Projects = () => {
       icon: <Globe className="w-6 h-6" />,
       github: 'https://github.com/aaditya-712/Drum-Kit',
       demo: 'https://aaditya-712.github.io/Drum-Kit/',
-      color: 'from-blue-500 to-purple-500'
+      color: 'from-blue-500 to-purple-500',
+      status: 'Completed'
     },
     {
       title: 'TinDog - Tinder for Dogs',
@@ -56,7 +71,8 @@ const Projects = () => {
       icon: <Globe className="w-6 h-6" />,
       github: 'https://github.com/aaditya-712/TinDog',
       demo: 'https://aaditya-712.github.io/TinDog/',
-      color: 'from-green-500 to-teal-500'
+      color: 'from-green-500 to-teal-500',
+      status: 'Completed'
     },
     {
       title: 'Basic Calculator',
@@ -65,7 +81,8 @@ const Projects = () => {
       icon: <Globe className="w-6 h-6" />,
       github: 'https://github.com/aaditya-712/CodSoft/tree/main/Calculator',
       demo: 'https://aaditya-712.github.io/CodSoft/Calculator/',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-orange-500 to-red-500',
+      status: 'Completed'
     },
     {
       title: 'Portfolio',
@@ -74,7 +91,8 @@ const Projects = () => {
       icon: <Globe className="w-6 h-6" />,
       github: 'https://github.com/aaditya-712/CodSoft/tree/main/Portfolio',
       demo: 'https://aaditya-712.github.io/CodSoft/Portfolio/',
-      color: 'from-cyan-500 to-blue-500'
+      color: 'from-cyan-500 to-blue-500',
+      status: 'Completed'
     }
   ];
 
@@ -99,6 +117,15 @@ const Projects = () => {
                   <h3 className="text-lg md:text-xl font-semibold text-white group-hover:text-cyan-400 transition-colors duration-300">
                     {project.title}
                   </h3>
+                  {project.status && (
+                    <span className={`text-xs mt-1 inline-block px-2 py-1 rounded-full ${
+                      project.status === 'In Progress'
+                        ? 'bg-yellow-500 text-black'
+                        : 'bg-green-600 text-white'
+                    }`}>
+                      {project.status}
+                    </span>
+                  )}
                 </div>
 
                 <p className="text-sm md:text-base text-gray-300 mb-4 leading-relaxed">
