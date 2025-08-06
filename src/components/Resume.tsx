@@ -98,7 +98,7 @@ import React from 'react';
 import { Download, FileText, Eye } from 'lucide-react';
 
 const Resume = () => {
-  const fileId = '1iEY9kP9FMhMng6Iui8-YjRDYJUFwIzTK';
+  const fileId = '1LPfUl00AABfAmkzd7Mli4AhYYuGdZnUQ';
 
   const handleDownload = () => {
     window.open(`https://drive.google.com/uc?export=download&id=${fileId}`, '_blank');

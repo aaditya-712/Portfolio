@@ -10,7 +10,7 @@ const Projects = () => {
       tech: ['HTML', 'CSS', 'JavaScript', 'TypeScript', ],
       icon: <Globe className="w-6 h-6" />,
       github: '',
-      demo: 'https://bhushan-weds-vaishnavi.netlify.app/',
+      demo: '',
       color: 'from-blue-500 to-purple-500',
       status: 'In Progress'
     },

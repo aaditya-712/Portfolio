@@ -225,3 +225,9 @@ textarea:focus {
     transform: translateY(-20px);
   }
 }
+
+/* src/index.css */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
