@@ -27,7 +27,8 @@ const Landing = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay">
-            Hi, I'm <span className="text-cyan-400 font-semibold">Aaditya Deshmukh</span> – a Java backend developer who turns business ideas into working systems. Building Reliable Systems from the Ground Up
+            Hi, I'm <span className="text-cyan-400 font-semibold">Aaditya Deshmukh</span> – a Java backend developer who turns business ideas into working systems.<br /> 
+            Building Reliable Systems from the Ground Up
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in-delay-2">
