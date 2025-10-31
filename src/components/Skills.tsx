@@ -92,7 +92,7 @@ const Skills = () => {
                     onClick={() => window.open('/certificates/web-design', '_blank')}
                     className="hover:text-cyan-400 transition-colors duration-200 cursor-pointer"
                   >
-                    Learn Web Design, Python and MySQL: Bootcamp
+                    Web Design, Python and MySQL
                   </button>
                 </div>
                 <div className="flex items-center space-x-2">
