@@ -6,7 +6,7 @@ const Skills = () => {
     {
       title: 'Backend Development',
       icon: <Server className="w-6 h-6" />,
-      skills: ['Java', 'Spring Boot', 'REST APIs', 'Maven']
+      skills: ['Java', 'Spring Boot', 'Servlets', 'REST APIs', 'Maven']
     },
     {
       title: 'Database & Storage',
@@ -16,12 +16,12 @@ const Skills = () => {
     {
       title: 'Frontend Technologies',
       icon: <Globe className="w-6 h-6" />,
-      skills: ['JavaScript', 'React', 'HTML/CSS', 'Tailwind CSS', 'Bootstrap']
+      skills: ['JavaScript', 'React', 'TypeScript', 'HTML/CSS', 'Tailwind CSS', 'Bootstrap']
     },
     {
       title: 'Tools',
       icon: <Smartphone className="w-6 h-6" />,
-      skills: ['Git/GitHub', 'Postman', 'IntelliJ IDEA']
+      skills: ['Git/GitHub', 'Postman', 'IntelliJ IDEA', 'VS Code']
     }
   ];
 
