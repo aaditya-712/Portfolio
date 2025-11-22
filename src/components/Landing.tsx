@@ -20,15 +20,14 @@ const Landing = () => {
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-            {/* Building Reliable Systems */}
+            Building Reliable Systems
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-400">
-              Aaditya Deshmukh
+              from the Ground Up
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay">
             Hi, I'm <span className="text-cyan-400 font-semibold">Aaditya Deshmukh</span> – a Java backend developer who turns business ideas into working systems.<br /> 
-            Building Reliable Systems from the Ground Up
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in-delay-2">
